@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>TARBEYA</title>
+    <link rel="icon" href="img/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="js/rtl/jquery-3.3.1.min.js"></script>
+    <script src="js/countup.js"></script>
+    <script src="js/rtl/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link href="css/bootstrap-rtl.css" rel="stylesheet" /> -->
+    <link href="css/rtl/bootstrap-rtl.min.css" rel="stylesheet" />
+
+    <script>
+        window.addEventListener("load", function() {
+            var load_screen = document.getElementById("load_screen");
+            document.body.removeChild(load_screen);
+            $("html").css({
+                'overflow': 'auto'
+            });
+        });
+    </script>
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="load_screen">
+        <div id="loading">
+
+            <img src="img/logo2.png" class="loader" style="width:50px;height:50px;" />
+        </div>
+    </div>
+    <div class="main index-main">
+
+        <header>
+
+            <button class="btn btn-open-menu float-right" onclick="togglepagemenu()">
+                <span class="btn-span-menu btn-span-menu-1"></span>
+                <span class="btn-span-menu btn-span-menu-2"></span>
+                <span class="btn-span-menu btn-span-menu-3"></span> 
+
+            </button>
+            <div class="small-menu float-right">
+
+
+                <div class="img-website float-right" onclick="menusmall()">
+
+                </div>
+                <div class="all-menu-small wow animated bounce">
+                    <ul class="img-website-menu ">
+                        <li> <a href="# "><span class="fa span-mr fa-cog "></span> Settings</a> </li>
+                        <li> <a href="# "><span class="fa span-mr fa-user "></span> Profile</a> </li>
+                        <li> <a href="# "><span class="fa span-mr fa-sign-out "></span> Logout</a> </li>
+                    </ul>
+                    <span class="arrow-top "></span>
+                </div>
+            </div>
+            <div class="div-logo-webite">
+                <img src="img/logo.png " class="logo-webite float-right " width="162px " height="70px " alt="logo for website " />
+            </div>
+            <!-- <h1 class="float-right ">
+                تربية
+                <br> TARBEYA
+            </h1> -->
+            <h2 class="float-right ">أرشيف البحث</h2>
+        </header>
+        <!-- menu -->
+        <div class="for-back-menu " onclick="togglepagemenu() "></div>
+        <div class="nav-menu ">
+            <ul>
+                <li>
+                    <a class="a--nav" href="index.html">
+                        <span class="icon-nav fa fa-home "></span> الرئيسية
+                    </a>
+                </li>
+                <li>
+                    <a class="a--nav " href="import.html">
+                        <span class="icon-nav fa fa-location-arrow "></span>أرشيف الصادر
+                    </a>
+                </li>
+                <li>
+                    <a class="a--nav " href="export.html">
+                        <span class="icon-nav fa fa-location-arrow "></span> أرشيف الوارد
+                    </a>
+                </li>
+                <li>
+                    <a class="a--nav " href="puplic.html">
+                        <span class="icon-nav fa fa-location-arrow "></span> الأرشيف العام
+                    </a>
+                </li>
+                <li>
+                    <a class="a--nav " href="photos.html">
+                        <span class="icon-nav fa fa-location-arrow "></span> أرشيف الصور
+                    </a>
+                </li>
+                <li>
+                    <a class="a--nav" href="videos.html">
+                        <span class="icon-nav fa fa-location-arrow"></span> أرشيف الفيديوهات
+                    </a>
+                </li>
+                <li>
+                    <a class="a--nav " href="products.html">
+                        <span class="icon-nav fa fa-location-arrow "></span> أرشيف الفعاليات والمنتجات
+                    </a>
+                </li>
+                <li>
+                    <a class="a--nav " href="forms.html">
+                        <span class="icon-nav fa fa-location-arrow "></span> أرشيف النماذج
+                    </a>
+                </li>
+                <li>
+                    <a class="a--nav " href="contracts.html">
+                        <span class="icon-nav fa fa-location-arrow "></span> أرشيف العقود والشؤون المالية
+                    </a>
+                </li>
+                <li>
+                    <a class="a--nav " href="contacts.html">
+                        <span class="icon-nav fa fa-location-arrow "></span> بيانات العملاء
+                    </a>
+                </li>
+                <li>
+                    <a class="a--nav ">
+                        <span class="icon-nav fa fa-location-arrow "></span> بيانات المدارس
+                    </a>
+                </li>
+                <li>
+                    <a class="a--nav ">
+                        <span class="icon-nav fa fa-location-arrow "></span> التقارير
+                    </a>
+                </li>
+                <li>
+                    <a class="a--nav " href="reminders.html">
+                        <span class="icon-nav fa fa-location-arrow "></span> التنبيهات
+                    </a>
+                </li>
+                <li>
+                    <a class="a--nav ">
+                        <span class="icon-nav fa fa-location-arrow "></span> الإعدادات
+                    </a>
+                </li>
+                <li>
+                    <a class="a--nav menu-active" href="search.html">
+                        <span class="icon-nav fa fa-location-arrow "></span> البحث
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid body-archive-2">
+            <div class="row up-form">
+                <div class="text-up-form">
+                    البيانات الرئيسية
+                </div>
+            </div>
+            <form class="row for-form">
+
+                <div class="col-md-2">
+                    <label for="document-number" class="text-label">رقم المستند</label>
+                </div>
+                <div class="col-md-2">
+                    <label id="document-number" class="input-label">10205060</label>
+                </div>
+                <div class="col-md-2">
+                    <label for="from-date" class="text-label">التاريخ من</label>
+                </div>
+                <div class="col-md-2">
+                    <label id="from-date" class="input-label">22/5/2018</label>
+                </div>
+                <div class="col-md-2">
+                    <label for="to-date" class="text-label">التاريخ الى</label>
+                </div>
+                <div class="col-md-2">
+                    <label id="to-date" class="input-label">22/5/2018</label>
+                </div>
+
+
+                <br>
+                <br>
+                <br>
+
+                <div class="col-md-2">
+                    <label for="side" class="text-label">الجهة</label>
+
+                </div>
+                <div class="col-md-5">
+                    <select id="side" class="input-label pd-0" required>
+
+                                        <option value="val-1">Value 1</option>
+                                        <option value="val-2">Value 2</option>
+                                    </select>
+                </div>
+                <div class="col-md-5">
+                    <select id="side-2" class="input-label pd-0 mr-top-20-mobile" required>
+                                 
+                                <option value="val-1">Value 1</option>
+                                <option value="val-2">Value 2</option>
+                            </select>
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <div class="col-md-2">
+                    <label for="file-name" class="text-label">اسم الملف</label>
+
+                </div>
+                <div class="col-md-10">
+                    <input type="text" id="file-name" class="input-label" required placeholder="ملف الأرشيف">
+
+                </div>
+
+
+                <br>
+                <br>
+                <br>
+
+                <div class="col-md-2">
+                    <label for="program" class="text-label">البرنامج</label>
+                </div>
+                <div class="col-md-2">
+                    <select id="program" class="input-label pd-0" required>
+                                 
+                                <option value="val-1">Value 1</option>
+                                <option value="val-2">Value 2</option>
+                            </select> </div>
+                <div class="col-md-2">
+                    <label for="path" class="text-label">المسار</label>
+                </div>
+                <div class="col-md-2">
+                    <select id="path" class="input-label pd-0" required>
+                                 
+                                <option value="val-1">Value 1</option>
+                                <option value="val-2">Value 2</option>
+                            </select> </div>
+                <div class="col-md-2">
+                    <label for="effectiveness" class="text-label">الفعالية</label>
+                </div>
+                <div class="col-md-2">
+
+                    <select id="effectiveness" class="input-label pd-0" required>
+                                 
+                                <option value="val-1">Value 1</option>
+                                <option value="val-2">Value 2</option>
+                            </select>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <div class="col-md-2">
+                    <label for="department" class="text-label">القسم</label>
+                </div>
+                <div class="col-md-3">
+                    <select id="department" class="input-label pd-0" required>
+                                     
+                                    <option value="val-1">Value 1</option>
+                                    <option value="val-2">Value 2</option>
+                                </select> </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-2">
+                    <label for="unit" class="text-label">الوحدة</label>
+                </div>
+                <div class="col-md-2">
+                    <select id="unit" class="input-label pd-0" required>
+                                     
+                                    <option value="val-1">Value 1</option>
+                                    <option value="val-2">Value 2</option>
+                                </select> </div>
+
+
+                <br>
+                <br>
+                <br>
+                <div class="col-md-2">
+                    <label for="priority-level" class="text-label">درجة الأهمية</label>
+                </div>
+                <div class="col-md-3">
+                    <select id="priority-level" class="input-label pd-0" required>
+                                                     
+                                                    <option value="val-1">Value 1</option>
+                                                    <option value="val-2">Value 2</option>
+                                                </select> </div>
+                <div class="col-md-3"></div>
+                <div class="col-md-2">
+                    <label for="degree-of-confidentiality" class="text-label">درجة السرية</label>
+                </div>
+                <div class="col-md-2">
+                    <select id="degree-of-confidentiality" class="input-label pd-0" required>
+                                                     
+                                                    <option value="val-1">Value 1</option>
+                                                    <option value="val-2">Value 2</option>
+                                                </select> </div>
+
+
+                <br>
+                <br>
+                <br>
+                <div class="col-md-2">
+                    <label for="type-of-speech" class="text-label">نوع المسند</label>
+                </div>
+                <div class="col-md-3">
+                    <select id="type-of-speech" class="input-label pd-0" required>
+                                                     
+                                                    <option value="val-1">Value 1</option>
+                                                    <option value="val-2">Value 2</option>
+                                                </select> </div>
+
+
+                <br>
+                <br>
+                <br>
+
+                <div class="width-100">
+                    <button type="submit" class="btn btn-save  float-left">حفظ</button>
+                </div>
+
+
+            </form>
+
+        </div>
+        <div class="container-fluid">
+            <div class="row up-form">
+                <div class="text-up-form">
+                    البحث
+                </div>
+            </div>
+            <form class="row for-form">
+                <div class="col-md-12">
+                    <div class="search-div float-right">
+                        <label class="text-label" for="search-table">search</label>
+                        <input type="search" id="search-table" class="input-label" />
+                    </div>
+                    <div class="list-div float-left">
+                        <label class="text-label" for="show-table">show</label>
+
+                        <select id="show-table" class="input-label pd-0" required>
+                                    <option value="val-1">10</option>
+                                    <option value="val-2">20</option>
+                                    <option value="val-2">30</option>
+                                    <option value="val-2">40</option>
+                                </select>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mr-top-20">
+                    <div class="table-responsive-md">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">رقم المرفق</th>
+                                    <th scope="col">الموضوع</th>
+                                    <th scope="col">التاريخ</th>
+                                    <th scope="col" class="w-115">تحميل صورة</th>
+                                    <th scope="col" class="w-115">حذف</th>
+                                    <th scope="col" class="w-115">عرض</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                <tr>
+
+                                    <td><label class="text-label" for="attached-number">رقم المرفق</label>
+                                    </td>
+                                    <td>
+                                        <label class="text-label" for="subject">الموضوع</label>
+                                    </td>
+                                    <td>
+                                        <label id="today-date-8" class="input-label">22/5/2018</label>
+                                    </td>
+                                    <td>
+                                        <div class="for-borowse-btn">
+                                            <input type="file" class="file-browse" />
+                                            <input type="button" class="btn-browse-up" value="..." />
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-save btn-delete">حذف</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-save btn-browse">عرض</button>
+
+
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+
+                                    <td><label class="text-label" for="attached-number">رقم المرفق</label>
+                                    </td>
+                                    <td>
+                                        <label class="text-label" for="subject">الموضوع</label>
+                                    </td>
+                                    <td>
+                                        <label id="today-date-8" class="input-label">22/5/2018</label>
+                                    </td>
+                                    <td>
+
+
+
+                                        <div class="for-borowse-btn">
+                                            <input type="file" class="file-browse" />
+                                            <input type="button" class="btn-browse-up" value="..." />
+                                        </div>
+
+
+
+
+
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-save btn-delete">حذف</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-save btn-browse">عرض</button>
+
+
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                        <p>
+                            <span class="float-right"><a href="">Previous</a><span class="span-number">1</span><a href="">Next</a></span>
+                            <span class="float-left"><span class="span-number">1</span>from<span class="span-number all-number">5</span></span>
+                        </p>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <footer class="text-center "> جميع حقوق النشر محفوظة © 2019 تربية </footer>
+</body>
+
+<script src="js/rtl/bootstrap.min.js"></script>
+<script src="js/rtl/jquery-3.3.1.min.js"></script>
+<script src="js/rtl/popper.min.js"></script>
+
+<script src="js/forjs.js"></script>
+
+
+
+
+<script src="https://unpkg.com/tilt.js@1.1.21/dest/tilt.jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/wow.js"></script>
+
+
+
+<!-- countjs -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="js/jquery.countup.js"></script>
+<script src="js/countUp.js"></script>
+
+
+<script>
+    $('.counter').countUp();
+</script>
+<script>
+    $(document).ready(function() {
+        $('#scene').parallax();
+    });
+</script>
+
+
+<!-- //parallex mouse -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/1.1.1/jquery.parallax.min.js"></script>
+
+</html>
